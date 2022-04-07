@@ -1,3 +1,11 @@
+"""
+Author: James Kola Ojoawo
+Date: 8th March, 2022   Time: 8:14pm
+
+This script uses the ETABS API to create Material Properties in a corresponding ETABS version.
+Future commitments include a GUI & faster optimization in the software itself. 
+"""
+
 # Perform Necessary Imports
 import os
 import sys
@@ -110,5 +118,3 @@ region_list = ['China', 'Europe', 'India', 'Italy', 'Korea', 'New Zealand', 'Rus
 
 # define material property
 ret = SapModel.PropMaterial.AddMaterial(name, members_dict[members], region_list[region])
-
-
